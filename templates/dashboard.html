@@ -1,0 +1,83 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-2">
+      Welcome {{username.name}},
+    </div>
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-md-8">
+          <h4>Recent message</h4>
+        </div>
+        <div class="col-md-4">
+            <a ng-click="showModelPopup();" style="cursor:pointer;">
+              <span class="label label-success">Add New Message+</span>
+            </a>
+        </div>
+      </div>
+
+      <blockquote ng-repeat="x in records">
+      <p>
+        {{x.message}}
+      </p> <small>{{x.userid}} <cite>{{x.lastupdated}}</cite></small>
+  </blockquote>
+
+<ul class="pagination">
+    <li>
+      <a href="#">Prev</a>
+    </li>
+    <li>
+      <a href="#">1</a>
+    </li>
+    <li>
+      <a href="#">2</a>
+    </li>
+    <li>
+      <a href="#">3</a>
+    </li>
+    <li>
+      <a href="#">4</a>
+    </li>
+    <li>
+      <a href="#">5</a>
+    </li>
+    <li>
+      <a href="#">Next</a>
+    </li>
+  </ul>
+    </div>
+    <div class="col-md-2">
+      <button type="submit" class="btn btn-primary" ng-click="logout();">
+        Logout
+      </button>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="addMessageModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                ×
+              </button>
+              <h4 class="modal-title" id="myModalLabel">
+                Add New Message
+              </h4>
+            </div>
+            <div class="modal-body">
+                <textarea rows=10  class="form-control" placeholder="Enter Message" ng-model="textMessage"></textarea>
+            </div>
+            <div class="modal-footer">
+
+              <button type="button" class="btn btn-default" data-dismiss="modal">
+                Close
+              </button>
+              <button type="button" class="btn btn-primary" ng-click="addmessage();">
+                Save changes
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>

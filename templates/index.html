@@ -1,0 +1,66 @@
+<div class="container-fluid">
+<div class="row">
+
+  <div class="col-md-4">
+    
+      <h4>Login</h4>
+      <div class="form-group">
+        <label for="loginEmail">
+          Email address
+        </label>
+        <input type="email" class="form-control" id="loginEmail" ng-model="loginEmail">
+      </div>
+      <div class="form-group">
+
+        <label for="loginPassword">
+          Password
+        </label>
+        <input type="password" class="form-control" id="loginPassword" ng-model="loginPassword">
+      </div>
+
+      <button type="submit" class="btn btn-success" ng-click="login();">
+        Login
+      </button>
+
+  </div>
+<div class="col-md-2"></div>
+<div class="col-md-4">
+    
+      <h4>Register</h4>
+      <div class="form-group">
+        <label for="name">
+          Name
+        </label>
+        <input type="text" class="form-control" id="name" ng-model="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">
+          Email address
+        </label>
+        <input type="email" class="form-control" id="email" ng-model="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">
+          Phone
+        </label>
+        <input type="number" class="form-control" id="phone"  ng-model="phone" required>
+      </div>
+      <div class="form-group">
+
+        <label for="password">
+          Password
+        </label>
+        <input type="password" class="form-control" id="password" ng-model="password" required>
+      </div>
+
+      <button type="submit" class="btn btn-primary" ng-click="register();">
+        Register
+      </button>
+  </div>
+    <div class="col-md-2"></div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+  </div>
+</div>
+</div>

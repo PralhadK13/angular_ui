@@ -1,0 +1,14 @@
+{
+  "name": "demoApp",
+  "version": "0.0.0",
+  "description": "Sample App",
+  "main": "index.js",
+  "keywords": [
+    "example"
+  ],
+  "author": "Demo",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.12.4"
+  }
+}
