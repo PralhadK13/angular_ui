@@ -1,2 +1,1 @@
-
-zsddssdfd
+''' Angular Sample UI
